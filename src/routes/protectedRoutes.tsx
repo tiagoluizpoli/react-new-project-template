@@ -6,8 +6,8 @@ import { Box, Typography } from '@mui/material';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
-// const { FeatureRoutes } = lazyImport(() => import('@/features/feature-template'), 'FeatureRoutes');
-const { CustomersRoutes } = lazyImport(() => import('@/features/customers'), 'CustomersRoutes');
+const { FeatureRoutes } = lazyImport(() => import('@/features/feature-template'), 'FeatureRoutes');
+
 const NotFound = () => {
   return <Box>Not Found</Box>;
 };
@@ -25,10 +25,7 @@ export const protectedRoutes = [
   {
     path: '/app',
     element: <App />,
-    children: [
-      { path: '/app/customers/*', element: <CustomersRoutes /> },
-      // { path: '/app/feature/*', element: <FeatureRoutes /> }
-    ],
+    children: [{ path: '/app/feature/*', element: <FeatureRoutes /> }],
   },
   { path: '', element: <AppRedirectionHandler redirectTo="/app" /> },
   { path: '/*', element: <NotFound /> },

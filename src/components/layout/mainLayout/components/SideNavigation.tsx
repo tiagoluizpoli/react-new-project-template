@@ -61,7 +61,9 @@ type DrawerOptionsProps = {
 };
 
 const DrawerOptions = ({ toggleDrawer }: DrawerOptionsProps) => {
-  const options = [{ name: 'clientes', icon: <SupervisedUserCircleIcon />, to: '/app/customers' }];
+  const options = [
+    { name: 'feature example', icon: <SupervisedUserCircleIcon />, to: '/app/feature' },
+  ];
   const styles = {
     mainBox: { minWidth: { xs: '100vw', sm: '345px' } },
     drawerHeader: {

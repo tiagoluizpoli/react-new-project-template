@@ -1,5 +1,5 @@
 import { applicationInfo } from '../../constants/applicationInfo';
-import Icon from '../../assets/icons/icon.svg';
+import Icon from '../../assets/icons/icon.png';
 
 import { Helmet } from 'react-helmet-async';
 
