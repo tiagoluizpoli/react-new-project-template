@@ -18,6 +18,6 @@ export const publicRoutes = [
   },
   {
     path: '*',
-    element: <AuthRedirectHandler redirectTo='/auth/login' />,
+    element: <AuthRedirectHandler redirectTo="/auth/login" />,
   },
 ];
