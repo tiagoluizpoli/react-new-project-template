@@ -21,11 +21,20 @@ const App = () => {
     </MainLayout>
   );
 };
+
+// ###=> A Home simulation.
+// #TODO=> Delete this when this project start to be implemented
+const BaseEntryElement = () => {
+  return <div>Entry</div>;
+};
 export const protectedRoutes = [
   {
     path: '/app',
     element: <App />,
-    children: [{ path: '/app/feature/*', element: <FeatureRoutes /> }],
+    children: [
+      { path: '/app/', element: <BaseEntryElement /> },
+      { path: '/app/feature/*', element: <FeatureRoutes /> },
+    ],
   },
   { path: '', element: <AppRedirectionHandler redirectTo="/app" /> },
   { path: '/*', element: <NotFound /> },
