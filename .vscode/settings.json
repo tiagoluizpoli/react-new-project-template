@@ -3,7 +3,12 @@
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
-  "eslint.validate": ["javascript", "javascriptreact", "typescript", "typescriptreact"],
+  "eslint.validate": [
+    "javascript",
+    "javascriptreact",
+    "typescript",
+    "typescriptreact"
+  ],
   "editor.formatOnSave": true,
   "[javascript]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
@@ -17,5 +22,41 @@
   "[typescriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "editor.tabSize": 2
+  "editor.tabSize": 2,
+  "todohighlight.isEnable": true,
+  "todohighlight.isCaseSensitive": true,
+  "todohighlight.include": [
+    "**/*.js",
+    "**/*.jsx",
+    "**/*.ts",
+    "**/*.tsx",
+    "**/*.html",
+    "**/*.php",
+    "**/*.css",
+    "**/*.scss"
+  ],
+  "todohighlight.keywords": [
+    {
+      "text": "#TODO=>",
+      "color": "blue",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+    },
+    {
+      "text": "FIXME",
+      "color": "red",
+    },
+    {
+      "text": "###=>",
+      "color": "#4df",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+    }
+  ],
+  "todohighlight.defaultStyle": {
+    "color": "red",
+    "backgroundColor": "rgba(256, 256, 256, 0.5)",
+    "cursor": "arrow",
+    "borderRadius": "2px",
+    "isWholeLine": true,
+    "fontWeight": "700",
+  },
 }

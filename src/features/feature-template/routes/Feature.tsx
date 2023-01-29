@@ -1,7 +1,5 @@
-import { ContentLayout } from '@/components';
 import { addBreadcrumbs } from '@/stores/useBreadcrumbs';
 
-import { Typography } from '@mui/material';
 import { useEffect } from 'react';
 
 export const Feature = () => {
@@ -11,9 +9,5 @@ export const Feature = () => {
       { label: 'New Feature', to: '/app/feature/newfeature' },
     ]);
   }, []);
-  return (
-    <ContentLayout title="Feature">
-      <Typography>Content</Typography>
-    </ContentLayout>
-  );
+  return <h1>Content</h1>;
 };

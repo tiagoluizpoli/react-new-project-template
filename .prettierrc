@@ -27,8 +27,9 @@
         "*.md"
       ],
       "options": {
-        "tabWidth": 2,
-        "singleAttributePerLine": true
+        "tabWidth": 2
+       
+        
       }
     }
   ]
