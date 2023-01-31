@@ -3,15 +3,13 @@ import { Head } from './components';
 
 import { AppRoutes } from '@/routes';
 
-import { Box } from '@mui/material';
-
 function App() {
   return (
     <AppProviders>
-      <Box sx={{ height: '100vh', backgroundColor: 'alternativeColors.defaultBackgroundColor' }}>
+      <div>
         <Head />
         <AppRoutes />
-      </Box>
+      </div>
     </AppProviders>
   );
 }

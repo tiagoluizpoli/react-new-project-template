@@ -49,11 +49,14 @@ module.exports = {
                     'error',
                     {
                         patterns: [
+                            '@/api/*/*',
                             '@/features/*/*',
                             '@/stores/*/*',
                             '@/components/*/*',
                             '@/constants/*/*',
                             '@/lib/*/*',
+                            '@/types/*/*',
+                            '@/utils/*/*',
                         ],
                     },
                 ],
@@ -64,11 +67,6 @@ module.exports = {
                 'import/order': [
                     'error',
                     {
-                        // groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index', 'object'],
-                        // groups: [
-                        //   ['parent', 'sibling', 'index'],
-                        //   ['builtin', 'external', 'internal'],
-                        // ],
                         'groups': [
                             'index',
                             'sibling',
@@ -105,6 +103,10 @@ module.exports = {
                 '@typescript-eslint/no-explicit-any': ['off'],
 
                 'prettier/prettier': ['error'],
+                'react/jsx-first-prop-new-line': [2, 'multiline'],
+                'react/jsx-max-props-per-line': [2, { maximum: 2, when: 'multiline' }],
+                'react/jsx-indent-props': [2, 2],
+                'react/jsx-closing-bracket-location': [2, 'tag-aligned'],
             },
             plugins: ['prettier'],
         },
