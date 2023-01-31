@@ -2,20 +2,19 @@ import { MainLayout } from '@/components';
 import { AppRedirectionHandler } from '@/features/misc';
 import { lazyImport } from '@/utils';
 
-import { Box, Typography } from '@mui/material';
 import { Suspense } from 'react';
 import { Outlet } from 'react-router-dom';
 
 const { FeatureRoutes } = lazyImport(() => import('@/features/feature-template'), 'FeatureRoutes');
 
 const NotFound = () => {
-  return <Box>Not Found</Box>;
+  return <div>Not Found</div>;
 };
 
 const App = () => {
   return (
     <MainLayout>
-      <Suspense fallback={<Typography>Loading</Typography>}>
+      <Suspense fallback={<h1>Loading</h1>}>
         <Outlet />
       </Suspense>
     </MainLayout>
