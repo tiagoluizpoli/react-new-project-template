@@ -8,8 +8,8 @@ A template for new prejects preconfigured based on [React Bulletproof](https://g
 [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint) - vscode:extension/dbaeumer.vscode-eslint
 [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - vscode:extension/VisualStudioExptTeam.vscodeintellicode
 
-<br>
-#### Get rid of the line break error.
-git config core.autocrlf false
-git rm --cached -r .
-git reset --hard
+
+### Get rid of the line break error
+git config core.autocrlf false  
+git rm --cached -r .  
+git reset --hard  
