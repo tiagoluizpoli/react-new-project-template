@@ -1,5 +1,3 @@
-import { Box, Button, Typography } from '@mui/material';
-import CssBaseline from '@mui/material/CssBaseline';
 import React from 'react';
 import { ErrorBoundary } from 'react-error-boundary';
 import { HelmetProvider } from 'react-helmet-async';
@@ -7,10 +5,10 @@ import { BrowserRouter as Router } from 'react-router-dom';
 
 const ErrorFallback = () => {
   return (
-    <Box role="alert">
-      <Typography variant="h2">Ooops, algo deu errado :( </Typography>
-      <Button onClick={() => window.location.assign(window.location.origin)}>Atualizar</Button>
-    </Box>
+    <div role="alert">
+      <h2>Ooops, algo deu errado :( </h2>
+      <button onClick={() => window.location.assign(window.location.origin)}>Atualizar</button>
+    </div>
   );
 };
 type AppProviderProps = {
@@ -18,14 +16,12 @@ type AppProviderProps = {
 };
 export const AppProviders = ({ children }: AppProviderProps) => {
   return (
-    <CssBaseline>
-      <React.Suspense>
-        <ErrorBoundary FallbackComponent={ErrorFallback}>
-          <HelmetProvider>
-            <Router>{children}</Router>
-          </HelmetProvider>
-        </ErrorBoundary>
-      </React.Suspense>
-    </CssBaseline>
+    <React.Suspense>
+      <ErrorBoundary FallbackComponent={ErrorFallback}>
+        <HelmetProvider>
+          <Router>{children}</Router>
+        </HelmetProvider>
+      </ErrorBoundary>
+    </React.Suspense>
   );
 };
