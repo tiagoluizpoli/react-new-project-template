@@ -9,7 +9,7 @@ A template for new prejects preconfigured based on [React Bulletproof](https://g
 [IntelliCode](https://marketplace.visualstudio.com/items?itemName=VisualStudioExptTeam.vscodeintellicode) - vscode:extension/VisualStudioExptTeam.vscodeintellicode
 
 <br>
-####Get rid of the line break error.
+#### Get rid of the line break error.
 git config core.autocrlf false
 git rm --cached -r .
 git reset --hard
