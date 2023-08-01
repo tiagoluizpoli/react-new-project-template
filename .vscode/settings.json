@@ -10,18 +10,6 @@
     "typescriptreact"
   ],
   "editor.formatOnSave": true,
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.tabSize": 2,
   "todohighlight.isEnable": true,
   "todohighlight.isCaseSensitive": true,
@@ -44,6 +32,7 @@
     {
       "text": "FIXME",
       "color": "red",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
     },
     {
       "text": "###=>",
@@ -53,7 +42,7 @@
   ],
   "todohighlight.defaultStyle": {
     "color": "red",
-    "backgroundColor": "rgba(256, 256, 256, 0.5)",
+    "backgroundColor": "rgba(0, 0, 0, 0)",
     "cursor": "arrow",
     "borderRadius": "2px",
     "isWholeLine": true,
