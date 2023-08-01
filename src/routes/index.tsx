@@ -1,5 +1,6 @@
-import { useRoutes } from 'react-router-dom';
 import { protectedRoutes } from './protectedRoutes';
+
+import { useRoutes } from 'react-router-dom';
 
 export const AppRoutes = () => {
   const routes = protectedRoutes;

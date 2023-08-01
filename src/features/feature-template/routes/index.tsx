@@ -7,17 +7,9 @@ export const FeatureRoutes = () => {
     <Routes>
       <Route
         path=""
-        element={
-          <Navigate
-            to="/app/feature/newfeature"
-            replace
-          />
-        }
+        element={<Navigate to="/app/feature/newfeature" replace />}
       />
-      <Route
-        path="/newfeature"
-        element={<Feature />}
-      />
+      <Route path="/newfeature" element={<Feature />} />
     </Routes>
   );
 };

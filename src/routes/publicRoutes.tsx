@@ -1,13 +1,13 @@
-import { Box } from '@mui/material';
+
 import React from 'react';
 
 const AuthRoutes = () => {
-  return <Box>auth</Box>;
+  return <div>auth</div>;
   //create and import it
 };
 
 const AuthRedirectHandler = ({ redirectTo }: { redirectTo: string }) => {
-  return <Box>{redirectTo}</Box>;
+  return <div>{redirectTo}</div>;
   //create and import it
 };
 

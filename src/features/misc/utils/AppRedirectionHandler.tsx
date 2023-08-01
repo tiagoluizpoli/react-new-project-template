@@ -5,6 +5,6 @@ export const AppRedirectionHandler = ({ redirectTo }: { redirectTo: string }) =>
   const navigate = useNavigate();
   useEffect(() => {
     navigate(redirectTo);
-  }, []);
+  });
   return <div>AppRedirectionHandler</div>;
 };
